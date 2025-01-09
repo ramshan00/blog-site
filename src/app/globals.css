@@ -2,32 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* styles/globals.css */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Custom CSS for border color change on click */
+.image-container {
+    border: 2px solid #ccc; /* Default light border color */
+    transition: all 0.3s ease; /* Smooth transition for border change */
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .image-container:focus-within {
+    border-color: #1D3557; /* Dark blue border color when clicked */
   }
+  
+  .image-container:hover {
+    border-color:gray; /* Light gold border color on hover */
+  }
+body{
+  /* position: relative; */
+  font-style: italic;
 }
+  
