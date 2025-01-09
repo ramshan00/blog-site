@@ -96,7 +96,7 @@ const NavBar = () => {
             Latest
           </Link>
           <Link
-            href="/pen"
+            href="/protest"
             className="block text-black font-medium hover:text-gray-500 transition py-2"
             onClick={() => setMenuOpen(false)}
           >
