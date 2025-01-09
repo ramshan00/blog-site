@@ -103,11 +103,11 @@ const NavBar = () => {
             Protest
           </Link>
           <Link
-            href="/contact"
+            href="/about"
             className="block text-black font-medium hover:text-gray-500 transition py-2"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            About
           </Link>
         </div>
       )}
